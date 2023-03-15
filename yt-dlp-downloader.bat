@@ -9,7 +9,7 @@ echo.
 echo Enter the URL to download (channel, playlist, or single video):
 set /p url=
 
-set "outputPath=D:\AEW"
+set "outputPath=C:\path\to\download\location"
 set "options=-f bestvideo[ext=mkv]+bestaudio[ext=m4a]/bestvideo+bestaudio/best --merge-output-format mkv --embed-subs --embed-thumbnail --add-metadata --fixup detect_or_warn"
 
 yt-dlp.exe %options% -o "%outputPath%\%%(title)s.%%(ext)s" %url%
